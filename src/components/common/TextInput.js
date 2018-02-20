@@ -9,9 +9,9 @@ const TextInput = ({name, label, onChange, placeholder, value, error}) => {
         <label htmlFor={name}>{label}</label>
             <div className="field">
                 <input
-                type='text'
+                type="text"
                 name={name}
-                className='form-control'
+                className="form-control"
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}/>
@@ -27,7 +27,7 @@ TextInput.propTypes = {
     onChange: PropTypes.func.IsRequired,
     placeholder: PropTypes.string,
     value: PropTypes.string,
-    error: PropTypes.string,
+    error: PropTypes.string
 };
 
 export default TextInput;
