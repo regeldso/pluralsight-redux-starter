@@ -10,7 +10,7 @@ export default {
   debug: true,
   devtool: 'source-map',
   noInfo: false,
-  entry: path.resolve(__dirname, 'src/index'),
+  entry: './src/index',
   target: 'web',
   output: {
     path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
@@ -18,7 +18,7 @@ export default {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist')
+    contentBase: './dist'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
