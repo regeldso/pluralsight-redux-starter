@@ -23,9 +23,9 @@ const SelectInput = ({name, label, onChange, defaultOption, value, error, option
 };
 
 SelectInput.propTypes = {
-    name: PropTypes.string.IsRequired,
-    label: PropTypes.string.IsRequired,
-    onChange: PropTypes.func.IsRequired,
+    name: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
     defaultOption: PropTypes.string,
     value: PropTypes.string,
     error: PropTypes.string,
